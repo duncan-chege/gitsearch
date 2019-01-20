@@ -5,5 +5,7 @@
 })
 export class GitsearchService {
 
-  constructor() { }
+  constructor() {
+      console.log("Github service has started");
+  } 
 }
