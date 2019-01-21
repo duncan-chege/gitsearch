@@ -1,10 +1,11 @@
-<div class="extra">
+<div class="container extra">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="details"> Enter your <b>username</b> and view your github details
+      <i>(Profile and current repositories)</i></p>
+    </div>
+  </div>
 
-<p> Enter your <b>username</b> and view your github details
-  <i>(Profile and current repositories)</i></p>
-</div>
-
-<div class="profile">
   <div class="row">
     <div class="col-md-6 details">
       <img src="{{profile.avatar_url}}" class="rounded-circle image" alt="Profile Image">
@@ -15,13 +16,13 @@
     </div>
   </div>
 
+<hr>
+
     <div class="row">
       <div class="col-md-6">
         <ul class="list-group">
           <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+          <li class="list-group-item" *ngIf="profile.created_at"> Created on :{{profile.created_at | date}}</li>
         </ul>
       </div>
     </div>

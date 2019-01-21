@@ -1,9 +1,9 @@
 .extra{
-  margin-left: 20em;
   margin-top: 20px;
+  margin-left: 10%;
 }
 .profile{
-  margin-left: 35em
+  margin-left: 0;
 }
 .image{
   display: inline-block;
@@ -15,6 +15,12 @@
   margin-left: 25px;
 }
 .location{
-  margin-left: 49px;
+  margin-right: 90px;
   margin-top: 25px;
+}
+.details{
+  text-align: center;
+}
+hr{
+  width: 100px;
 }

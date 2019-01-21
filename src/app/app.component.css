@@ -1,7 +1,14 @@
 .header{
 /* margin-left: 300px; */
-display: inline;
+/* display: inline; */
+text-align: center;
+font-size: 40px;
+display: inline-block;
 }
 .icon{
-margin-left: 30em;
+/* margin-left: 30em; */
+display: inline-block;
+}
+.thehead{
+  text-align: center;
 }
