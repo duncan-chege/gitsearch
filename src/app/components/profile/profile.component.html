@@ -1,11 +1,28 @@
 <div class="extra">
+
 <p> Enter your <b>username</b> and view your github details
   <i>(Profile and current repositories)</i></p>
 </div>
 
 <div class="profile">
-  <div clas="row">
-    <div class="col-md-4">
-<b>{{profile.name}}</b> <br> <i>{{profile.login}}</i>
-<p class="location" *ngIf="profile.location"> Based in {{profile.location}} </p>
+  <div class="row">
+    <div class="col-md-6 details">
+      <img src="{{profile.avatar_url}}" class="rounded-circle image" alt="Profile Image">
+      <div class="userid">
+        <b>{{profile.name}}</b> <br> <i>{{profile.login}}</i>
+      </div>
+        <p class="location" *ngIf="profile.location"> Based in {{profile.location}} </p>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+        </ul>
+      </div>
+    </div>
 </div>

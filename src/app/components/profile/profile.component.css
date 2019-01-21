@@ -5,3 +5,16 @@
 .profile{
   margin-left: 35em
 }
+.image{
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
+.userid{
+  display: inline-block;
+  margin-left: 25px;
+}
+.location{
+  margin-left: 49px;
+  margin-top: 25px;
+}
