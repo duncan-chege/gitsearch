@@ -3,6 +3,7 @@ import {Http, Headers} from '@angular/http';
 // use map operator to return all results from github into observables, then we will use observables in components were we will subscribe to them and we'll catch all the data
 import 'rxjs/add/operator/map';
 
+
 @Injectable()
 //   providedIn: 'root'
 // })
