@@ -8,22 +8,29 @@
 
   <div class="row">
     <div class="col-md-6 details">
+      <h2 class="proftitle"> Profile </h2>
       <img src="{{profile.avatar_url}}" class="rounded-circle image" alt="Profile Image">
       <div class="userid">
         <b>{{profile.name}}</b> <br> <i>{{profile.login}}</i>
       </div>
         <p class="location" *ngIf="profile.location"> Based in {{profile.location}} </p>
     </div>
+
+      <div class="col-md-6 repo">
+        <h2 class="proftitle"> Repositories </h2>
+        <div class="panel panel-default">
+          <div class="panel-body" *ngFor="let repo of repos">
+      </div>
   </div>
 
-<hr>
+
 
     <div class="row">
       <div class="col-md-6">
-        <ul class="list-group">
-          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-          <li class="list-group-item" *ngIf="profile.created_at"> Created on :{{profile.created_at | date}}</li>
-        </ul>
+        <hr>
+          <p *ngIf="profile.bio" class="bioalign">{{profile.bio}}</p>
+          <p class="created" *ngIf="profile.created_at"> Created on :{{profile.created_at | date}}</p>
+          <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-secondary profbtn"> View profile on Github</a></p>
       </div>
-    </div>
+      </div>
 </div>

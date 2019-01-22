@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background: linear-gradient(to right, #d3cce3, #e9e4f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #373737;
+}

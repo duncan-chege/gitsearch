@@ -16,11 +16,30 @@
 }
 .location{
   margin-right: 90px;
-  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-top: 15px;
 }
 .details{
   text-align: center;
 }
 hr{
-  width: 100px;
+  width: 100%;
+  margin-left: 0;
+  margin-top: -15px;
+}
+.created{
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.profbtn{
+  border-radius: 25px;
+  margin-left: 20%;
+}
+.proftitle{
+  margin-right: 80px;
+  margin-bottom: 20px;
+  color: #C0B283;
+}
+.bioalign{
+  margin-left: 10px;
 }

@@ -24,4 +24,9 @@ export class ProfileService {
     .map(res=> res.json());  //covert info received into observables
 
   }
+  getProfileRepos{
+    return this.http.get("https://api.github.com/users/" +this.username +
+    "/repos?client_id=" +this.clientid + "&client_secret=" +this.clientsecret)
+    .map(res=> res.json());  //covert info received into observables
+  }
 }
