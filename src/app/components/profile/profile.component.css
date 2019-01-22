@@ -2,6 +2,12 @@
   margin-top: 20px;
   margin-left: 10%;
 }
+.search-form{
+  width: 400px;
+  margin-left: 33%;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
 .profile{
   margin-left: 0;
 }
@@ -21,6 +27,8 @@
 }
 .details{
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: -10px;
 }
 hr{
   width: 100%;
@@ -29,17 +37,29 @@ hr{
 }
 .created{
   margin-right: 20%;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 .profbtn{
   border-radius: 25px;
-  margin-left: 20%;
+  margin-right: 60px;
 }
 .proftitle{
-  margin-right: 80px;
+  margin-right: 26%;
   margin-bottom: 20px;
   color: #C0B283;
 }
 .bioalign{
   margin-left: 10px;
+}
+.repobtn{
+  margin-left: 20px;
+  border-radius: 25px;
+}
+.inputtext{
+  border: none;
+  border-bottom: 1.5px solid #DCD0C0;
+  background: none;
+}
+.inputtext:focus{
+  outline: none;
 }

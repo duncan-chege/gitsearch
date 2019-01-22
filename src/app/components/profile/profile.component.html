@@ -3,6 +3,12 @@
     <div class="col-md-12">
       <p class="details"> Enter your <b>username</b> and view your github details
       <i>(Profile and current repositories)</i></p>
+      <form action="" class="search-form">
+        <div class="form-group">
+          <input type="text" class="inputtext" placeholder="Search git users with their username"
+          [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        </div>
+      </form>
     </div>
   </div>
 
@@ -14,23 +20,22 @@
         <b>{{profile.name}}</b> <br> <i>{{profile.login}}</i>
       </div>
         <p class="location" *ngIf="profile.location"> Based in {{profile.location}} </p>
+        <hr>
+          <p *ngIf="profile.bio" class="bioalign">{{profile.bio}}</p>
+          <p class="created" *ngIf="profile.created_at"> Created on :{{profile.created_at | date}}</p>
+          <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-secondary profbtn"> View profile on Github</a></p>
     </div>
 
       <div class="col-md-6 repo">
         <h2 class="proftitle"> Repositories </h2>
         <div class="panel panel-default">
           <div class="panel-body" *ngFor="let repo of repos">
+            <p class="clearfix">
+              <b>{{repo.name}}</b> <a href="{{repo.html_url}}" class="btn btn-outline-dark btn-sm repobtn pull-right"
+              target="_blank">View repo on github</a>
+            </p>
+              <p>{{repo.description}}</p>
       </div>
   </div>
 
-
-
-    <div class="row">
-      <div class="col-md-6">
-        <hr>
-          <p *ngIf="profile.bio" class="bioalign">{{profile.bio}}</p>
-          <p class="created" *ngIf="profile.created_at"> Created on :{{profile.created_at | date}}</p>
-          <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-secondary profbtn"> View profile on Github</a></p>
-      </div>
-      </div>
 </div>
