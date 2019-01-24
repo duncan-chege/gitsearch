@@ -56,10 +56,6 @@ hr{
   border-radius: 25px;
 }
 .inputtext{
-  border: none;
-  border-bottom: 1.5px solid #DCD0C0;
-  background: none;
-}
-.inputtext:focus{
-  outline: none;
+  border-radius: 15px;
+  border: 2px solid white;
 }
