@@ -16,7 +16,6 @@ export class ProfileService {
 
   constructor(private http:Http ) {  //inject http module into the constructor
     console.log("Service is now ready");
-    this.username="raeman21";
   }
 
   getProfileInfo(){  //function to be used to get data from github api
